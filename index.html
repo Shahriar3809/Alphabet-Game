@@ -71,25 +71,24 @@
                 </div>
                 <!-- Life Score -->
                 <div class="flex justify-between w-[1024px]"> 
-                    <button class="btn rounded-full bg-purple-500 text-white">
+                    <button class="btn rounded-full bg-purple-600 text-white">
                         Life
                         <img src="./alphabet-clash-pro-resources-main/images/Group.png" alt="">
-                        <span>1</span>
+                        <span id="lifePoint">5</span>
                     </button>
-                    Life
                     <button class="btn  bg-purple-600 text-white rounded-full">
                         Score
                        <img src="./alphabet-clash-pro-resources-main/images/mon.png" alt="">
-                        <span>1</span>
+                        <span id="scorePoint">0</span>
                     </button>
                 </div>
             </div>
         </section>
         <!-- Score -Result -->
-        <section class="score flex justify-center items-center min-h-screen text-center hidden">
+        <section id="finalScore" class="score flex justify-center items-center min-h-screen text-center hidden">
             <div class="text-white space-y-8 bg-[#FFFFFF33] p-4 rounded-md">
-                <h1 class="text-8xl font-bold ">Score: <span>14</span></h1>
-                <button class="btn">Play again</button>
+                <h1 class="text-8xl font-bold ">Score: <span id="finalScoreCard">14</span></h1>
+                <button onclick="play()" class="btn">Play again</button>
                <p>Practice will make you Pro</p>
             </div>
         </section>
