@@ -63,6 +63,10 @@ function setTextValue(elementId, newSet) {
 
 document.addEventListener('keyup', function (event) {
     const playerPressed = event.key;
+
+    if(playerPressed === "Escape") {
+        gameOver();
+    }
     
     const currentAlpha = document.getElementById('current-alphabet').innerText;
     const expected = currentAlpha.toLowerCase();
